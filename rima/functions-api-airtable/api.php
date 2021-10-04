@@ -25,11 +25,11 @@ define('Clients et adhérents', 'appXXXXXXXXXXXXXXX');
     // Usage : echo constant("tous_les_clients");
 
     // TABLE Commandes
-    define('Commandes', 'tblX3dJFKFAjFSFqq');
+    define('Commandes', 'tbXXXXXXXXXXXXXXXXXXX');
     // Usage : echo constant("Commandes");
 
     // TABLE Produits commandés
-    define('Produits commandés', 'tblRmUyysgGsDqhgd');
+    define('Produits commandés', 'tbXXXXXXXXXXXXXXXXXXXX');
     // Usage : echo constant("Produits commandés");
 
 /*
@@ -148,10 +148,10 @@ function check_user_exist($id){
  */
 function slack_notify($msg='', $param=[]){
 	try {
-		$endpoint = 'https://hooks.slack.com/services/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';
+		$endpoint = 'https://hooks.slack.com/services/XXXXXXXXXXXX/XXXXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXX';
 		$data = array_merge([
 			'channel'  => '#demande-individuelle',
-			'icon'     => 'https://team.webcup.fr/wp-content/uploads/sites/16/2021/10/ProfilePicture-2.png',
+			'icon'     => 'https://webcup.fr/ProfilePicture-2.png',
 			'username' => 'alan',
 			'text'     => $msg
 		], $param);
